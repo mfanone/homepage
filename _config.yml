@@ -39,6 +39,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+
 markdown: kramdown
 kramdown:
   input: GFM
