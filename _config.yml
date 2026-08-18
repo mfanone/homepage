@@ -4,6 +4,7 @@ url: "https://martin-fanone.org"
 
 # Disable GitHub Pages default theme
 theme: null
+safe: true
 
 # Collections
 collections:
