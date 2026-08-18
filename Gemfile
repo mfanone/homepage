@@ -1,8 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "jekyll-sitemap"
-gem "jekyll-feed"
+gem "github-pages", group: :jekyll_plugins
 
 # Required on newer Ruby versions
 gem "webrick"
