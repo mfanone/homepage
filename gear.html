@@ -1,0 +1,28 @@
+---
+layout: default
+title: Gear
+stats:
+  - label: Base weight
+    value: "14.2 lb"
+  - label: Total cost
+    value: "$620"
+  - label: Last updated
+    value: "Aug 2026"
+    accent: true
+---
+<div class="eyebrow" style="text-align:center; margin-top:40px;">Gear</div>
+<h1 style="text-align:center;">My gear list</h1>
+<p style="text-align:center; color:#5A5A5A; max-width:440px; margin:0 auto;">
+  My current backpacking setup, kept up to date on LighterPack — base weight, cost, and everything I actually carry.
+</p>
+
+<!-- Replace with your real LighterPack embed URL -->
+<iframe
+  src="https://lighterpack.com/r/yourlist"
+  width="100%"
+  height="500"
+  frameborder="0"
+  style="border:1px solid #E4E1D6; border-radius:12px; margin-top:24px;">
+</iframe>
+
+{% include stat-bar.html stats=page.stats %}

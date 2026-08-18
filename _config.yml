@@ -1,0 +1,39 @@
+title: Mark Martin-Fanone
+description: "Michigan backpacking trip reports, gear, and budget guides."
+url: "https://martin-fanone.org"
+
+# Collections
+collections:
+  trip-reports:
+    output: true
+    permalink: /trip-reports/:path/
+  guides:
+    output: true
+    permalink: /guides/:path/
+
+# Default front matter per collection, so you don't repeat layout: every time
+defaults:
+  - scope:
+      path: ""
+      type: "trip-reports"
+    values:
+      layout: "trip-report"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+sass:
+  sass_dir: _sass
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+markdown: kramdown

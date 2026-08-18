@@ -1,0 +1,12 @@
+---
+layout: home
+title: Home
+---
+
+<h2>Latest trip reports</h2>
+<div class="card-grid">
+  {% assign recent = site.trip-reports | sort: 'date' | reverse | slice: 0, 4 %}
+  {% for trip in recent %}
+    {% include trip-card.html item=trip %}
+  {% endfor %}
+</div>

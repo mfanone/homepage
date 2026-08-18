@@ -1,0 +1,10 @@
+- name: Home
+  url: /
+- name: Trip Reports
+  url: /trip-reports.html
+- name: Guides
+  url: /guides.html
+- name: Gear
+  url: /gear.html
+- name: About
+  url: /about.html

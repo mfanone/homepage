@@ -1,0 +1,15 @@
+<!-- Usage: {% include trip-card.html item=trip %} -->
+<a class="card" href="{{ include.item.url | relative_url }}">
+  <div class="card-thumb">
+    {% if include.item.image %}
+      <img src="{{ include.item.image | relative_url }}" alt="{{ include.item.title }}">
+    {% endif %}
+  </div>
+  <h3>{{ include.item.title }}</h3>
+  {% if include.item.distance %}
+    <div class="card-meta">
+      {{ include.item.distance }} &middot; {{ include.item.nights }} nights &middot; {{ include.item.date | date: "%b %Y" }}
+    </div>
+    <div class="card-cost">Total cost: ${{ include.item.cost }}</div>
+  {% endif %}
+</a>

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Trip Reports
+---
+<div class="eyebrow" style="text-align:center; margin-top:40px;">Trip Reports</div>
+<h1 style="text-align:center;">Michigan trails, hiked and logged</h1>
+
+<div class="card-grid">
+  {% assign trips = site.trip-reports | sort: 'date' | reverse %}
+  {% for trip in trips %}
+    {% include trip-card.html item=trip %}
+  {% endfor %}
+</div>

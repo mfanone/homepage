@@ -1,0 +1,24 @@
+<!--
+  Usage: {% include stat-bar.html stats=page.stats %}
+  Each stat item needs: label, value, and optional accent: true
+  Define in front matter, e.g.:
+
+  stats:
+    - label: Distance
+      value: "24 mi"
+    - label: Nights
+      value: "2"
+    - label: Date
+      value: "Jun 2026"
+    - label: Total cost
+      value: "$38"
+      accent: true
+-->
+<div class="stat-bar">
+  {% for stat in include.stats %}
+    <div class="stat{% if stat.accent %} accent{% endif %}">
+      <div class="stat-label">{{ stat.label }}</div>
+      <div class="stat-value">{{ stat.value }}</div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Guides
+---
+<div class="eyebrow" style="text-align:center; margin-top:40px;">Guides</div>
+<h1 style="text-align:center;">How to backpack Michigan without spending much</h1>
+
+<div class="card-grid">
+  {% assign guides = site.guides | sort: 'date' | reverse %}
+  {% for guide in guides %}
+    {% include trip-card.html item=guide %}
+  {% endfor %}
+</div>
