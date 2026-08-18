@@ -2,6 +2,9 @@ title: Mark Martin-Fanone
 description: "Michigan backpacking trip reports, gear, and budget guides."
 url: "https://martin-fanone.org"
 
+# Disable GitHub Pages default theme
+theme: null
+
 # Collections
 collections:
   trip-reports:
@@ -37,3 +40,6 @@ plugins:
   - jekyll-feed
 
 markdown: kramdown
+kramdown:
+  input: GFM
+
