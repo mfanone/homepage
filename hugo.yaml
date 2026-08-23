@@ -1,0 +1,73 @@
+baseURL: "https://martin-fanone.org/"
+title: "Mark Martin-Fanone"
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+pagination:
+  pagerSize: 10
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Trip Reports
+      url: /trip-reports/
+      weight: 2
+    - name: Guides
+      url: /guides/
+      weight: 3
+    - name: Gear
+      url: /gear/
+      weight: 4
+    - name: About
+      url: /about/
+      weight: 5
+
+params:
+  env: production
+  description: "Michigan backpacking trip reports, gear, and budget guides."
+  author: Mark Martin-Fanone
+  mainSections: ["trip-reports"]
+
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowToc: false
+  ShowWordCount: false
+  disableSpecial1stPost: true
+
+  homeInfoParams:
+    Title: "Mark Martin-Fanone"
+    Content: >
+      Michigan backpacking trip reports, gear, and budget guides —
+      Recreation Passport math, dispersed camping, and what it actually
+      costs to hike Michigan's trails.
+
+
+      <div class="buttons"><a class="btn btn-primary" href="/trip-reports/">Trip reports</a> <a class="btn btn-secondary" href="/about/">Start here</a></div>
+
+  assets:
+    disableHLJS: true
+    favicon: "/favicon/favicon-32x32.png"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon-180x180.png"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

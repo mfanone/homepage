@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Palette override — replaces PaperMod's default theme-vars.css values
+   ========================================================================== */
+:root {
+  --radius: 12px;
+  --theme: #FAF9F6;
+  --entry: #FFFFFF;
+  --primary: #2B2B2B;
+  --secondary: #5A5A5A;
+  --tertiary: #E4E1D6;
+  --content: #2B2B2B;
+  --code-bg: #F3F1EA;
+  --border: #E4E1D6;
+  --accent: #6B7F5C;
+  --accent-dark: #55684A;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --theme: #1E211C;
+  --entry: #262A22;
+  --primary: #E7E5DE;
+  --secondary: #B3B0A4;
+  --tertiary: #3A3E34;
+  --content: #D9D6CC;
+  --code-bg: #2A2E25;
+  --border: #3A3E34;
+  --accent: #8FA57D;
+  --accent-dark: #A8BC98;
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.post-title, h1, h2, h3, .entry-header h2 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* ==========================================================================
+   Material Design elevation system
+   Material 3 uses a 5-level elevation scale expressed as layered shadows
+   rather than a single box-shadow — this approximates that on cards/entries.
+   ========================================================================== */
+.first-entry,
+.post-entry,
+.home-info,
+.top-link {
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: box-shadow 0.2s ease;
+}
+
+.first-entry:hover,
+.post-entry:hover {
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 6px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   Links / accent color
+   ========================================================================== */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: var(--accent-dark);
+}
+
+.social-icons a:hover {
+  color: var(--accent) !important;
+}
+
+/* ==========================================================================
+   Buttons — Material-style filled/outlined pairing, reused from the
+   original hero mockup (btn-primary / btn-secondary)
+   ========================================================================== */
+.home-info .buttons,
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 20px; /* Material 3 uses pill-shaped buttons */
+  font-weight: 500;
+  font-size: 0.9em;
+  text-decoration: none !important;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--theme) !important;
+}
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary) !important;
+  border: 1px solid var(--tertiary);
+}
+.btn-secondary:hover {
+  background: var(--code-bg);
+}
+
+/* ==========================================================================
+   Stat bar — reused component pattern from the original design
+   Wrap in a div.stat-bar with div.stat children inside post content
+   ========================================================================== */
+.stat-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 24px 0 32px 0;
+}
+
+@media (max-width: 700px) {
+  .stat-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-bar .stat {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+}
+
+.stat-bar .stat-label {
+  font-size: 0.7em;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.stat-bar .stat-value {
+  font-size: 1.05em;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-bar .stat.accent {
+  background: var(--accent);
+}
+.stat-bar .stat.accent .stat-label {
+  color: rgba(255, 255, 255, 0.75);
+}
+.stat-bar .stat.accent .stat-value {
+  color: var(--theme);
+}
+
+/* ==========================================================================
+   Cost table
+   ========================================================================== */
+table.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+table.cost-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+table.cost-table tr:last-child td {
+  border-bottom: none;
+  font-weight: 700;
+}
