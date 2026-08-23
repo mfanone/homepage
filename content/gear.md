@@ -7,7 +7,7 @@ My current backpacking setup, kept up to date on LighterPack — base weight, co
 
 <!-- Replace with your real LighterPack embed URL -->
 <iframe
-  src="https://lighterpack.com/r/yourlist"
+  src="https://lighterpack.com/r/6rg0aq"
   width="100%"
   height="500"
   frameborder="0"

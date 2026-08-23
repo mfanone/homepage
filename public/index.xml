@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mark Martin-Fanone</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Mark Martin-Fanone</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Isle Royale on a budget</title>
+      <link>http://localhost:1313/guides/isle-royale-on-a-budget/</link>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/isle-royale-on-a-budget/</guid>
+      <description>Ferry costs, entrance fees, and a realistic 4-day trip budget.</description>
+    </item>
+    <item>
+      <title>Michigan permits and passes, explained</title>
+      <link>http://localhost:1313/guides/permits-and-passes/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/permits-and-passes/</guid>
+      <description>Recreation Passport, backcountry permits, and NPS fees — what you actually need.</description>
+    </item>
+    <item>
+      <title>Free and cheap backcountry camping in Michigan</title>
+      <link>http://localhost:1313/guides/free-cheap-camping-michigan/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/free-cheap-camping-michigan/</guid>
+      <description>State forest dispersed camping vs. state park fees, explained.</description>
+    </item>
+    <item>
+      <title>Backpacking Michigan on $20/day</title>
+      <link>http://localhost:1313/guides/backpacking-mi-on-20-a-day/</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/guides/backpacking-mi-on-20-a-day/</guid>
+      <description>A realistic day-rate budget breakdown for Michigan backpacking.</description>
+    </item>
+    <item>
+      <title>Manistee River Trail Loop</title>
+      <link>http://localhost:1313/trip-reports/manistee-river-trail/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/trip-reports/manistee-river-trail/</guid>
+      <description>24 mi, 2 nights, $38 total — a beginner-friendly Lower Peninsula loop.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About Mark Martin-Fanone.</description>
+    </item>
+    <item>
+      <title>Gear</title>
+      <link>http://localhost:1313/gear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gear/</guid>
+      <description>My current backpacking setup, kept up to date on LighterPack.</description>
+    </item>
+  </channel>
+</rss>
