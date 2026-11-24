@@ -6,13 +6,10 @@ description: "My current backpacking setup, kept up to date on LighterPack."
 My current backpacking setup, kept up to date on LighterPack — base weight, cost, and everything I actually carry.
 
 <!-- Replace with your real LighterPack embed URL -->
-<iframe
-  src="https://lighterpack.com/r/6rg0aq"
-  width="100%"
-  height="500"
-  frameborder="0"
-  style="border:1px solid var(--border); border-radius:12px; margin-top:24px;">
-</iframe>
+<div style="margin-top:24px; max-height:500px; overflow-y:auto; border:1px solid var(--border); border-radius:12px; padding:16px;">
+  <script src="https://lighterpack.com/e/6rg0aq"></script>
+  <div id="6rg0aq"></div>
+</div>
 
 <div class="stat-bar">
   <div class="stat"><div class="stat-label">Base weight</div><div class="stat-value">14.2 lb</div></div>
